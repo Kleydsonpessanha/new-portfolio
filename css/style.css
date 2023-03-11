@@ -350,7 +350,8 @@ header {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 2rem
+      margin-top: 2rem;
+      padding-bottom: 3rem;
     }
 
      .app-profile-items {
@@ -368,6 +369,11 @@ header {
       object-fit: cover;
       width: 100%;
       
+    }
+
+    .app-profile-items p {
+      color: var(--gray-color);
+      text-align: justify;
     }
 
 
@@ -389,28 +395,40 @@ header {
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 1rem;
+     
     }
 
     .project-items {
       margin-bottom: 1rem;
       border-radius: 10px;
-      max-width: 320px;
+      max-width: 300px;
+      margin: 2rem;
       text-align: center;
       padding: 1rem;
       background-color: var(--white-color);
+     cursor: pointer;
+      transition: all .4s; 
+    }
+
+    .project-items:hover {
+      box-shadow: 0 0 25px rgb(0 0 0 / 20%);
     }
 
     .project-items img {
       border-radius: 0.5rem;
-      height: 120px;
+      
       object-fit: cover;
       width: 100%;
       height: 200px;
     }
 
+     .name-of-project {
+      margin-top: 4px;
+     }
+
     .description-of-projects {
       margin-top: 1rem;
+     
       text-align: justify;
       color: var(--gray-color);
     }
@@ -421,10 +439,11 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
     }
 
     .button-of-access {
-     
+ 
       background-color: rgba(0,0,0,.5);
       transition: all .3s ease;
       border-radius: 50%;
@@ -446,4 +465,58 @@ header {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+
+   .hardskills-container {
+    padding: 2rem 0;
+      display: flex; 
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--white-color);
+   }
+
+   .title-hardskills {
+    font-size: 1.9rem;
+   }
+
+    .title-hardskills span {
+      color: var(--secondary-color);
+    }
+
+    .hardskills {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .hardkills-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+
+    .hardkills-items figure {
+      background-color: rgb(237, 242, 248);
+      border-radius: 50%;
+      height: 90px;
+      width: 90px;
+      position: relative;
+    }
+
+    .image-from-tecnology {
+      width: 60px;
+      position: absolute; 
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .paragraph-of-tecnology {
+      margin-top: 1rem;
+      color: var(--gray-color);
     }
