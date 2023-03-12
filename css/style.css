@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Dancing+Script:wght@500&family=Kanit:ital,wght@1,300&family=Poppins:wght@300;500;600&family=Satisfy&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rubik:ital@1&family=Source+Sans+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +19,10 @@
     --bg-menu: #e5e5e5ae;
     --brown-color: #46364a;
     --white-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -177,6 +181,18 @@ header {
       justify-content: center;
       text-align: center;
     }
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+    .title > span {
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
     
     .app-header-info {
       display: flex;
@@ -328,10 +344,10 @@ header {
 
     .title-of-page-work {
       padding: 35px 0;
-      font-size:2.25rem;
+      
     font-weight: 800;
     text-align: center;
-    text-transform: capitalize;
+    
     width: 65%;
     margin: 0 auto;
     }
@@ -382,11 +398,11 @@ header {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 3rem 0;
+      padding: 3rem 0 1rem 0;
     }
 
     .title-of-project {
-      font-size: 1.9rem;
+      
        margin-bottom: 4rem;
     }
 
@@ -468,7 +484,7 @@ header {
     }
 
    .hardskills-container {
-    padding: 2rem 0;
+    padding-top: 2rem;
       display: flex; 
       flex-direction: column;
       justify-content: center;
@@ -477,7 +493,7 @@ header {
    }
 
    .title-hardskills {
-    font-size: 1.9rem;
+    
    }
 
     .title-hardskills span {
@@ -490,6 +506,9 @@ header {
       justify-content: center;
       flex-wrap: wrap;
       gap: 20px;
+      width: 100%;
+      max-width: 500px;
+      margin: 3rem;
     }
 
     .hardkills-items {
@@ -519,4 +538,89 @@ header {
     .paragraph-of-tecnology {
       margin-top: 1rem;
       color: var(--gray-color);
+    }
+
+    .contact-container {
+      padding-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .title-of-contact {
+      color: var(--secondary-color);
+    }
+
+    .contact {
+      display: flex;
+      align-items: center;
+     justify-content: center;
+     gap: 10px;
+     flex-wrap: wrap;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact > a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--black-color);
+      cursor: pointer;
+    }
+
+    .contact > a > img {
+      width: 50px;
+    }
+
+    .contact-linkedin {
+      background-color: #0076b55f;
+    }
+
+    .contact-instagram {
+      background-color: #e4405e77;
+    }
+
+    .contact-github {
+      background-color: #18171764;
+    }
+
+
+    .contact-email {
+      background-color: #c3def4;
+    }
+
+    @media (max-width: 668px) {
+        .contact {
+          gap: 2rem;
+        }
+
+        .contact > a {
+          border-radius: 50%;
+        }
+
+        .contact > a > p {
+          display: none;
+        }
+    }
+
+
+    .rigths {
+      align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    width: 100%;
+    }
+
+    .text-rigths {
+      margin-right: 20px;
+      margin-bottom: 5px;
+      font-family: 'Courier New', Courier, monospace;
     }
