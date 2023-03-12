@@ -492,9 +492,7 @@ header {
       background-color: var(--white-color);
    }
 
-   .title-hardskills {
-    
-   }
+
 
     .title-hardskills span {
       color: var(--secondary-color);
@@ -595,7 +593,8 @@ header {
       background-color: #c3def4;
     }
 
-    @media (max-width: 668px) {
+    @media screen and (max-width: 678px) {
+
         .contact {
           gap: 2rem;
         }
@@ -620,7 +619,14 @@ header {
     }
 
     .text-rigths {
+      display: flex;
+      flex-direction: column;
       margin-right: 20px;
       margin-bottom: 5px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .text-rigths span {
+      color: var(--black-color);
       font-family: 'Courier New', Courier, monospace;
     }
